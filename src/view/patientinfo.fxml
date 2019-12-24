@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PatientInfoController">
+   <children>
+      <Label layoutX="23.0" layoutY="88.0" prefHeight="19.0" prefWidth="30.0" text="이름" />
+      <TextField fx:id="tfPatName" layoutX="116.0" layoutY="83.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="22.0" layoutY="126.0" text="성별" />
+      <ComboBox fx:id="cbPatGen" layoutX="119.0" layoutY="121.0" prefHeight="29.0" prefWidth="75.0" />
+      <TextField fx:id="tfPatAdd" layoutX="113.0" layoutY="300.0" prefHeight="29.0" prefWidth="258.0" />
+      <Label layoutX="23.0" layoutY="295.0" text="주소" />
+      <TextField fx:id="tfPatPhone" layoutX="115.0" layoutY="247.0" prefHeight="29.0" prefWidth="258.0" />
+      <Label layoutX="22.0" layoutY="252.0" text="연락처" />
+      <Label layoutX="23.0" layoutY="207.0" text="주민등록번호" />
+      <TextField fx:id="tfPatSsn" layoutX="119.0" layoutY="202.0" prefHeight="29.0" prefWidth="250.0" />
+      <Button fx:id="btnSave" layoutX="78.0" layoutY="351.0" mnemonicParsing="false" text="등록" />
+      <Button fx:id="btnClear" layoutX="168.0" layoutY="351.0" mnemonicParsing="false" text="초기화" />
+      <Button fx:id="btnPIClose" layoutX="273.0" layoutY="351.0" mnemonicParsing="false" text="종료" />
+      <ImageView fx:id="ivPatImage" fitHeight="144.0" fitWidth="105.0" layoutX="264.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profilStandard.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfPatAge" layoutX="116.0" layoutY="160.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="22.0" layoutY="165.0" prefHeight="19.0" prefWidth="30.0" text="나이" />
+      <Button fx:id="btnImageSave" layoutX="265.0" layoutY="160.0" mnemonicParsing="false" text="이미지 저장" />
+      <TextField fx:id="tfPatID" layoutX="115.0" layoutY="14.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="22.0" layoutY="19.0" prefHeight="19.0" prefWidth="50.0" text="아이디" />
+      <Label layoutX="23.0" layoutY="53.0" prefHeight="19.0" prefWidth="65.0" text="비밀번호" />
+      <PasswordField fx:id="pfPatPass" layoutX="114.0" layoutY="48.0" prefHeight="29.0" prefWidth="115.0" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

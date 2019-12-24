@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="608.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DiagnosisController">
+   <children>
+      <Label layoutX="222.0" layoutY="14.0" style="-fx-underline: true; -fx-font-size: 32; -fx-font-weight: bold;" text="진  단  서" />
+      <VBox layoutX="15.0" layoutY="67.0" prefHeight="493.0" prefWidth="552.0" style="-fx-border-color: black;">
+         <children>
+            <VBox prefHeight="95.0" prefWidth="374.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="466.0" spacing="10.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="54.0" text="환자의 성명" textAlignment="CENTER" wrapText="true" />
+                        <TextField fx:id="tfPatName" prefHeight="43.0" prefWidth="106.0" />
+                        <Label prefHeight="41.0" prefWidth="48.0" text="성별" />
+                        <TextField fx:id="tfPatGen" prefHeight="43.0" prefWidth="47.0" />
+                        <Label prefHeight="41.0" prefWidth="48.0" text="나이" />
+                        <TextField fx:id="tfPatAge" prefHeight="43.0" prefWidth="50.0" />
+                        <Label prefHeight="43.0" prefWidth="43.0" text="주민번호" wrapText="true" />
+                        <TextField fx:id="tfPatSsn" prefHeight="44.0" prefWidth="151.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="374.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="93.0" text="환자의 주소" />
+                        <TextField fx:id="tfPatAdd" prefHeight="44.0" prefWidth="257.0" />
+                        <Label alignment="CENTER" prefHeight="44.0" prefWidth="62.0" text="연락처" />
+                        <TextField fx:id="tfPatPhone" prefHeight="44.0" prefWidth="152.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="374.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="93.0" text="진료 사유" />
+                  <TextArea fx:id="taReson" prefHeight="43.0" prefWidth="286.0" />
+                  <Label prefHeight="19.0" prefWidth="50.0" text="진단일" />
+                  <TextField fx:id="tfResDate" prefHeight="41.0" prefWidth="119.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="94.0" prefWidth="40.0" text="처방 내역" textAlignment="CENTER" wrapText="true" />
+                  <TextArea fx:id="taPresc" prefHeight="100.0" prefWidth="512.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="374.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="39.0" text="비고" />
+                  <TextArea fx:id="taRemark" prefHeight="44.0" prefWidth="318.0" />
+                  <Label prefHeight="45.0" prefWidth="39.0" text="용도" />
+                  <TextArea fx:id="taPurpose" prefHeight="49.0" prefWidth="171.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="552.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="182.0" text="위와 같이 진단함">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="552.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="95.0" text="발행일" />
+                  <TextField fx:id="tfPuDate" prefHeight="29.0" prefWidth="462.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="552.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="121.0" text="병원명" />
+                  <TextField fx:id="tfHosname" prefHeight="29.0" prefWidth="488.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="552.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="90.0" text="주소" />
+                  <TextField fx:id="tfHosAdd" prefHeight="29.0" prefWidth="447.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="552.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="90.0" text="병원 연락처" />
+                  <TextField fx:id="tfHosPhone" prefHeight="29.0" prefWidth="460.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="552.0" style="-fx-border-color: black;">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="90.0" text="면허번호" />
+                  <TextField fx:id="tfDocLc" prefHeight="29.0" prefWidth="189.0" />
+                  <Label text="의사 이름" />
+                  <TextField fx:id="tfDocName" prefHeight="29.0" prefWidth="204.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnClose" layoutX="517.0" layoutY="566.0" mnemonicParsing="false" text="종료" />
+      <Button fx:id="btnPrint" layoutX="266.0" layoutY="566.0" mnemonicParsing="false" text="인쇄" />
+      <Button fx:id="btnClear" layoutX="15.0" layoutY="566.0" mnemonicParsing="false" text="초기화" />
+   </children>
+</AnchorPane>

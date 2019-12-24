@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="333.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Care_Management_Main_Controller">
+   <children>
+      <Label layoutX="24.0" layoutY="71.0" text="기간" />
+      <DatePicker fx:id="dpCaredate" layoutX="69.0" layoutY="66.0" prefHeight="29.0" prefWidth="189.0" />
+      <TableView fx:id="tvCareList" layoutX="24.0" layoutY="114.0" prefHeight="231.0" prefWidth="379.0" />
+      <Button fx:id="btnSave" layoutX="19.0" layoutY="357.0" mnemonicParsing="false" text="등록" />
+      <Button fx:id="btnClose" layoutX="353.0" layoutY="357.0" mnemonicParsing="false" text="종료" />
+      <Button fx:id="btnEdit" layoutX="83.0" layoutY="357.0" mnemonicParsing="false" text="수정" />
+      <Label layoutX="153.0" layoutY="14.0" style="-fx-font-size: 25;" text="진료 관리" />
+      <Button fx:id="btnCareRefresh" layoutX="362.0" layoutY="63.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="23.0">
+         <graphic>
+            <ImageView fx:id="ivDocRef" fitHeight="25.0" fitWidth="21.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/vcsupdaterequired_93493.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

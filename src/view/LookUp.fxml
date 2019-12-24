@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="702.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LookUp">
+   <children>
+      <Separator layoutX="25.0" layoutY="28.0" orientation="VERTICAL" prefHeight="666.0" prefWidth="23.0" />
+      <Separator layoutX="375.0" layoutY="62.0" prefHeight="16.0" prefWidth="496.0" />
+      <Separator layoutX="37.0" layoutY="20.0" prefHeight="16.0" prefWidth="834.0" />
+      <Separator layoutX="93.0" layoutY="28.0" orientation="VERTICAL" prefHeight="666.0" prefWidth="23.0" />
+      <Label layoutX="41.0" layoutY="56.0" text="방문일자" />
+      <Separator layoutX="37.0" layoutY="103.0" prefHeight="16.0" prefWidth="834.0" />
+      <Separator layoutX="863.0" layoutY="28.0" orientation="VERTICAL" prefHeight="666.0" prefWidth="17.0" />
+      <Separator layoutX="369.0" layoutY="28.0" orientation="VERTICAL" prefHeight="666.0" prefWidth="17.0" />
+      <Separator layoutX="41.0" layoutY="20.0" prefHeight="16.0" prefWidth="834.0" />
+      <DatePicker fx:id="dtePick2" blendMode="MULTIPLY" layoutX="172.0" layoutY="48.0" prefHeight="44.0" prefWidth="146.0" />
+      <Separator layoutX="37.0" layoutY="686.0" prefHeight="16.0" prefWidth="834.0" />
+      <ListView fx:id="listView2" layoutX="108.0" layoutY="113.0" prefHeight="579.0" prefWidth="265.0" />
+      <Label layoutX="49.0" layoutY="361.0" text="목 록">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="548.0" layoutY="73.0" prefHeight="35.0" prefWidth="172.0" text="진료 내용">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="119.0" text="담당 의사" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="658.0" layoutY="119.0" prefHeight="19.0" prefWidth="65.0" text="예약날짜" />
+      <Label layoutX="593.0" layoutY="214.0" text="진료내역" />
+      <TextArea fx:id="txtBackdown" layoutX="478.0" layoutY="253.0" prefHeight="84.0" prefWidth="290.0" />
+      <Label layoutX="595.0" layoutY="377.0" text="처방내역" />
+      <TextArea fx:id="txtPre" layoutX="480.0" layoutY="415.0" prefHeight="93.0" prefWidth="290.0" />
+      <Label layoutX="516.0" layoutY="119.0" text="환자 이름" />
+      <Label layoutX="781.0" layoutY="119.0" text="예약 시간" />
+      <TextField fx:id="txtMedical" layoutX="643.0" layoutY="144.0" prefHeight="29.0" prefWidth="94.0" />
+      <TextField fx:id="txtDay" layoutX="763.0" layoutY="144.0" prefHeight="29.0" prefWidth="100.0" />
+      <TextField fx:id="txtDtName" layoutX="383.0" layoutY="144.0" prefHeight="29.0" prefWidth="94.0" />
+      <TextField fx:id="txtPtName" layoutX="501.0" layoutY="144.0" prefHeight="29.0" prefWidth="94.0" />
+      <Label layoutX="612.0" layoutY="575.0" text="진료금" />
+      <TextField fx:id="txtMoney" alignment="CENTER" layoutX="685.0" layoutY="570.0" prefHeight="29.0" prefWidth="70.0" />
+      <Button fx:id="btnExit" layoutX="600.0" layoutY="644.0" mnemonicParsing="false" text="종료" />
+      <Separator layoutX="375.0" layoutY="185.0" prefHeight="7.0" prefWidth="496.0" />
+   </children>
+</AnchorPane>

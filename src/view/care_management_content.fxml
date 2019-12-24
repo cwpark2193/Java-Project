@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="567.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Care_Management_Content_Controller">
+   <children>
+      <Label layoutX="158.0" layoutY="14.0" style="-fx-font-size: 25;" text="진료 관리" />
+      <Label layoutX="24.0" layoutY="105.0" text="의사 연락처" />
+      <TextField fx:id="tfDocPhone" layoutX="107.0" layoutY="100.0" prefHeight="29.0" prefWidth="104.0" />
+      <Label layoutX="19.0" layoutY="172.0" text="진료 내용" />
+      <TextField fx:id="tfPatPhone" layoutX="309.0" layoutY="100.0" prefHeight="29.0" prefWidth="104.0" />
+      <Label layoutX="224.0" layoutY="105.0" text="환자 연락처" />
+      <Label layoutX="19.0" layoutY="314.0" text="처방 내역" />
+      <TextArea fx:id="taCareConts" layoutX="19.0" layoutY="191.0" prefHeight="116.0" prefWidth="389.0" />
+      <TextArea fx:id="taPresConts" layoutX="19.0" layoutY="333.0" prefHeight="116.0" prefWidth="389.0" />
+      <Button fx:id="btnSave" layoutX="19.0" layoutY="524.0" mnemonicParsing="false" text="저장" />
+      <Button fx:id="btnCareClose" layoutX="361.0" layoutY="524.0" mnemonicParsing="false" text="종료" />
+      <Label layoutX="29.0" layoutY="477.0" text="진료금" />
+      <TextField fx:id="tfCarePay" layoutX="82.0" layoutY="472.0" prefHeight="29.0" prefWidth="120.0" />
+      <TextField fx:id="tfPatName" layoutX="309.0" layoutY="59.0" prefHeight="29.0" prefWidth="104.0" />
+      <Label layoutX="224.0" layoutY="64.0" text="환자 이름" />
+      <Label layoutX="24.0" layoutY="64.0" text="의사 이름" />
+      <TextField fx:id="tfDocName" layoutX="109.0" layoutY="59.0" prefHeight="29.0" prefWidth="104.0" />
+      <Label layoutX="229.0" layoutY="141.0" text="진료시간" />
+      <Label layoutX="29.0" layoutY="141.0" text="진료날짜" />
+      <DatePicker fx:id="dpCareDate" layoutX="101.0" layoutY="136.0" prefHeight="29.0" prefWidth="115.0" />
+      <ComboBox fx:id="cbCareTime" layoutX="304.0" layoutY="136.0" prefHeight="29.0" prefWidth="104.0" />
+      <Button fx:id="btnClear" layoutX="177.0" layoutY="524.0" mnemonicParsing="false" text="초기화" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

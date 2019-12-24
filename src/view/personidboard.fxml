@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane prefHeight="420.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PersonIdBoardController">
+   <tabs>
+      <Tab text="의사 정보">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="700.0">
+               <children>
+                  <TableView fx:id="tvDocInfo" layoutX="206.0" layoutY="43.0" prefHeight="316.0" prefWidth="471.0" />
+                  <Label layoutX="20.0" layoutY="42.0" text="이름" />
+                  <TextField fx:id="tfDocName" layoutX="73.0" layoutY="37.0" prefHeight="29.0" prefWidth="88.0" />
+                  <TextField fx:id="tfDocAge" layoutX="73.0" layoutY="70.0" prefHeight="29.0" prefWidth="45.0" />
+                  <Label layoutX="20.0" layoutY="75.0" text="나이" />
+                  <TextField fx:id="tfDocPhone" layoutX="73.0" layoutY="105.0" prefHeight="29.0" prefWidth="88.0" />
+                  <Label layoutX="13.0" layoutY="110.0" text="연락처" />
+                  <ImageView fx:id="ivDoctor" fitHeight="108.0" fitWidth="90.0" layoutX="58.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/profilStandard.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="20.0" layoutY="145.0" text="주소" />
+                  <TextField fx:id="tfDocAdd" layoutX="73.0" layoutY="140.0" prefHeight="29.0" prefWidth="88.0" />
+                  <Button fx:id="btnDocEdit" layoutX="24.0" layoutY="284.0" mnemonicParsing="false" text="수정" />
+                  <Button fx:id="btnDocSet" layoutX="78.0" layoutY="284.0" mnemonicParsing="false" text="등록" />
+                  <Button fx:id="btnDocDel" layoutX="132.0" layoutY="284.0" mnemonicParsing="false" text="삭제" />
+                  <Button fx:id="btnDocClose" layoutX="78.0" layoutY="325.0" mnemonicParsing="false" text="종료" />
+                  <Button fx:id="btnDocRefresh" layoutX="636.0" layoutY="6.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="23.0">
+                     <graphic>
+                        <ImageView fx:id="ivDocRef" fitHeight="25.0" fitWidth="21.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/vcsupdaterequired_93493.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="환자 정보">
+         <content>
+            <AnchorPane prefHeight="339.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="tfPatAdd" layoutX="73.0" layoutY="140.0" prefHeight="29.0" prefWidth="88.0" />
+                  <Label layoutX="20.0" layoutY="145.0" text="주소" />
+                  <ImageView fx:id="ivPatient" fitHeight="108.0" fitWidth="90.0" layoutX="58.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/profilStandard.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="20.0" layoutY="104.0" text="연락처" />
+                  <TextField fx:id="tfPatPhone" layoutX="73.0" layoutY="105.0" prefHeight="29.0" prefWidth="88.0" />
+                  <Label layoutX="20.0" layoutY="75.0" text="나이" />
+                  <TextField fx:id="tfPatAge" layoutX="73.0" layoutY="70.0" prefHeight="29.0" prefWidth="45.0" />
+                  <TextField fx:id="tfPatName" layoutX="73.0" layoutY="37.0" prefHeight="29.0" prefWidth="88.0" />
+                  <Label layoutX="20.0" layoutY="42.0" text="이름" />
+                  <TableView fx:id="tvPatInfo" layoutX="206.0" layoutY="43.0" prefHeight="316.0" prefWidth="471.0" />
+                  <Button fx:id="btnPatDel" layoutX="131.0" layoutY="284.0" mnemonicParsing="false" text="삭제" />
+                  <Button fx:id="btnPatSet" layoutX="78.0" layoutY="284.0" mnemonicParsing="false" text="등록" />
+                  <Button fx:id="btnPatEdit" layoutX="24.0" layoutY="284.0" mnemonicParsing="false" text="수정" />
+                  <Button fx:id="btnPatClose" layoutX="78.0" layoutY="325.0" mnemonicParsing="false" text="종료" />
+                  <Button fx:id="btnPatRefresh" layoutX="636.0" layoutY="6.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="23.0">
+                     <graphic>
+                        <ImageView fx:id="ivPatRef" fitHeight="25.0" fitWidth="21.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/vcsupdaterequired_93493.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

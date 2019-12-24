@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="798.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectMenu">
+	<children>
+		<ImageView fitHeight="241.0" fitWidth="299.0" layoutX="337.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/진료조회.PNG" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="231.0" fitWidth="255.0" layoutX="34.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/진료예약.PNG" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="191.0" fitWidth="288.0" layoutX="1048.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/건의사항.PNG" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="231.0" fitWidth="296.0" layoutX="668.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/진단서.PNG" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="297.0" fitWidth="419.0" layoutX="454.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/캡처.PNG" />
+			</image>
+		</ImageView>
+		<Button fx:id="btnReservation" layoutX="100.0" layoutY="552.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" text="진료예약" />
+		<Button fx:id="btnApply" layoutX="1071.0" layoutY="552.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="164.0" text="건의게시판" />
+		<Button fx:id="btnLookUp" layoutX="432.0" layoutY="552.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="진료조회" />
+		<Button fx:id="btnIssued" layoutX="746.0" layoutY="552.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="134.0" text="진단서 발급신청" />
+      <Button fx:id="btnLogOut" layoutX="617.0" layoutY="755.0" mnemonicParsing="false" text="로그아웃" />
+      <ImageView fitHeight="140.0" fitWidth="180.0" layoutX="587.0" layoutY="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/로그아웃.PNG" />
+         </image>
+      </ImageView>
+      <Separator layoutY="287.0" prefHeight="22.0" prefWidth="1314.0" />
+      <Separator layoutX="309.0" layoutY="299.0" orientation="VERTICAL" prefHeight="304.0" prefWidth="19.0" />
+      <Separator layoutY="592.0" prefHeight="22.0" prefWidth="1314.0" />
+      <Separator layoutX="611.0" layoutY="299.0" orientation="VERTICAL" prefHeight="304.0" prefWidth="13.0" />
+      <Separator layoutX="961.0" layoutY="299.0" orientation="VERTICAL" prefHeight="304.0" prefWidth="13.0" />
+      <Separator layoutX="1308.0" layoutY="299.0" orientation="VERTICAL" prefHeight="304.0" prefWidth="13.0" />
+	</children>
+</AnchorPane>

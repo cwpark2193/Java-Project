@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="465.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoctorInfoController">
+   <children>
+      <Label layoutX="25.0" layoutY="92.0" text="이름" />
+      <TextField id="tfDocName" layoutX="113.0" layoutY="87.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="25.0" layoutY="132.0" text="성별" />
+      <TextField id="tfDocAdd" layoutX="113.0" layoutY="282.0" prefHeight="29.0" prefWidth="258.0" />
+      <Label layoutX="25.0" layoutY="287.0" text="주소" />
+      <TextField id="tfDocPhone" layoutX="112.0" layoutY="242.0" prefHeight="29.0" prefWidth="258.0" />
+      <Label layoutX="24.0" layoutY="246.0" text="연락처" />
+      <Label layoutX="25.0" layoutY="208.0" text="주민번호" />
+      <TextField id="tfDocSsn" layoutX="113.0" layoutY="203.0" prefHeight="29.0" prefWidth="227.0" />
+      <TextField id="tfDocLN" layoutX="136.0" layoutY="358.0" prefHeight="29.0" prefWidth="204.0" />
+      <Label layoutX="24.0" layoutY="362.0" text="의사면서 번호" />
+      <Button id="btnSave" fx:id="btnSave" layoutX="70.0" layoutY="414.0" mnemonicParsing="false" text="등록" />
+      <Button id="btnClear" fx:id="btnClear" layoutX="192.0" layoutY="414.0" mnemonicParsing="false" text="초기화" />
+      <Button id="btnClose" fx:id="btnClose" layoutX="318.0" layoutY="414.0" mnemonicParsing="false" text="종료" />
+      <ImageView id="ivDocPhoto" fitHeight="133.0" fitWidth="135.0" layoutX="246.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profilStandard.png" />
+         </image>
+      </ImageView>
+      <TextField id="tfDocAge" layoutX="112.0" layoutY="164.0" prefHeight="29.0" prefWidth="107.0" />
+      <Label layoutX="25.0" layoutY="169.0" text="나이" />
+      <Label layoutX="24.0" layoutY="324.0" text="진료시간대" />
+      <ComboBox layoutX="114.0" layoutY="319.0" prefWidth="150.0" />
+      <Button id="btnDocIvSet" layoutX="264.0" layoutY="164.0" mnemonicParsing="false" text="이미지 세팅" />
+      <TextField id="tfDocID" layoutX="112.0" layoutY="14.0" prefHeight="29.0" prefWidth="115.0" />
+      <Label layoutX="24.0" layoutY="19.0" text="아이디" />
+      <Label layoutX="24.0" layoutY="56.0" text="비밀번호" />
+      <PasswordField id="pfDocPass" layoutX="112.0" layoutY="51.0" prefHeight="29.0" prefWidth="115.0" />
+      <TextField id="tfDocGen" layoutX="112.0" layoutY="127.0" prefHeight="29.0" prefWidth="115.0" />
+   </children>
+</AnchorPane>

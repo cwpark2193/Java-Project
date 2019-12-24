@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NoticeBoardContentsController">
+   <children>
+      <Label layoutX="33.0" layoutY="14.0" text="제목" />
+      <Label layoutX="33.0" layoutY="45.0" text="비밀번호" />
+      <Label layoutX="33.0" layoutY="75.0" text="공개여부" />
+      <Label layoutX="33.0" layoutY="109.0" text="작성자" />
+      <Label layoutX="33.0" layoutY="143.0" text="내용 종류" />
+      <Label layoutX="33.0" layoutY="236.0" text="내용" />
+      <PasswordField fx:id="txtPassword" layoutX="128.0" layoutY="40.0" />
+      <ComboBox fx:id="Word" layoutX="128.0" layoutY="138.0" prefHeight="29.0" prefWidth="200.0" />
+      <RadioButton fx:id="rdoOpen" layoutX="128.0" layoutY="75.0" mnemonicParsing="false" text="공개" />
+      <RadioButton fx:id="rdoOFF" layoutX="194.0" layoutY="75.0" mnemonicParsing="false" text="비공개" />
+      <TextField fx:id="txtTitle" layoutX="128.0" layoutY="9.0" />
+      <TextField fx:id="txtHuman" layoutX="128.0" layoutY="104.0" />
+      <TextArea fx:id="AreaView" layoutX="130.0" layoutY="178.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btnSave" layoutX="59.0" layoutY="389.0" mnemonicParsing="false" text="등록" />
+      <Button fx:id="btnClose" layoutX="194.0" layoutY="389.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>

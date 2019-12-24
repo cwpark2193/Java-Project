@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Reservation_Management_Controller">
+   <children>
+      <Button fx:id="btnPersonInfo" layoutX="25.0" layoutY="348.0" mnemonicParsing="false" text="의사/환자 상세정보" />
+      <Button fx:id="btnResClose" layoutX="536.0" layoutY="348.0" mnemonicParsing="false" text="종료" />
+      <Button fx:id="btnClear" layoutX="444.0" layoutY="348.0" mnemonicParsing="false" text="예약취소" />
+      <Button fx:id="btnResRef" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="23.0">
+         <graphic>
+            <ImageView fx:id="ivDocRef" fitHeight="25.0" fitWidth="21.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/vcsupdaterequired_93493.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <DatePicker fx:id="dpResDate" layoutX="67.0" layoutY="17.0" />
+      <TableView fx:id="tvResList" layoutX="27.0" layoutY="69.0" prefHeight="273.0" prefWidth="557.0" />
+      <Label layoutX="27.0" layoutY="22.0" text="날짜" />
+   </children>
+</AnchorPane>

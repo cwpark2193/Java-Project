@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Issued">
+   <children>
+      <Separator layoutX="14.0" orientation="VERTICAL" prefHeight="902.0" prefWidth="63.0" />
+      <Separator layoutX="46.0" layoutY="44.0" prefHeight="27.0" prefWidth="640.0" />
+      <Label alignment="CENTER" layoutX="297.0" layoutY="9.0" text="진 단 서">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Separator layoutX="649.0" orientation="VERTICAL" prefHeight="902.0" prefWidth="74.0" />
+      <Separator layoutX="46.0" layoutY="50.0" prefHeight="17.0" prefWidth="640.0" />
+      <Separator layoutX="143.0" layoutY="162.0" prefHeight="17.0" prefWidth="544.0" />
+      <Separator layoutX="139.0" layoutY="56.0" orientation="VERTICAL" prefHeight="228.0" prefWidth="14.0" />
+      <Separator layoutX="46.0" layoutY="274.0" prefHeight="17.0" prefWidth="640.0" />
+      <Label layoutX="55.0" layoutY="160.0" text="인적 사항" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="148.0" layoutY="105.0" prefHeight="19.0" prefWidth="538.0" />
+      <Separator layoutX="148.0" layoutY="218.0" prefHeight="19.0" prefWidth="538.0" />
+      <Separator layoutX="227.0" layoutY="56.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="25.0" />
+      <Label layoutX="167.0" layoutY="71.0" prefHeight="26.0" prefWidth="44.0" text="성명">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="124.0" text="주소">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="185.0" prefHeight="26.0" prefWidth="44.0" text="나이">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="244.0" prefHeight="26.0" prefWidth="89.0" text="진료사유">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="355.0" layoutY="57.0" orientation="VERTICAL" prefHeight="55.0" prefWidth="25.0" />
+      <Label layoutX="369.0" layoutY="76.0" text="주민등록번호">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="387.0" layoutY="189.0" text="진단날짜" />
+      <Separator layoutX="462.0" layoutY="58.0" orientation="VERTICAL" prefHeight="55.0" prefWidth="14.0" />
+      <Separator layoutX="462.0" layoutY="167.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="14.0" />
+      <Separator layoutX="360.0" layoutY="167.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="14.0" />
+      <Separator layoutX="43.0" layoutY="-4.0" prefHeight="26.0" prefWidth="640.0" />
+      <Separator layoutX="46.0" layoutY="353.0" prefHeight="26.0" prefWidth="640.0" />
+      <Separator layoutX="46.0" layoutY="444.0" prefHeight="26.0" prefWidth="640.0" />
+      <Label layoutX="94.0" layoutY="310.0" prefHeight="26.0" prefWidth="89.0" text="처방내역">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="398.0" prefHeight="26.0" prefWidth="44.0" text="비고">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="492.0" layoutY="363.0" orientation="VERTICAL" prefHeight="95.0" prefWidth="14.0" />
+      <Separator layoutX="542.0" layoutY="363.0" orientation="VERTICAL" prefHeight="95.0" prefWidth="14.0" />
+      <Label alignment="CENTER" layoutX="506.0" layoutY="401.0" prefHeight="19.0" prefWidth="38.0" text="용도" />
+      <Label layoutX="270.0" layoutY="475.0" text="위와 같이 진단하였음">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="323.0" layoutY="549.0" prefHeight="36.0" prefWidth="114.0" text="유 의 사 항">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="585.0" prefHeight="22.0" prefWidth="472.0" text="다른 사람의 인장 도용 등에 의해 허위로 위임장을 작성하여 신청 하는" />
+      <Label layoutX="141.0" layoutY="615.0" prefHeight="22.0" prefWidth="492.0" text="경우에는 형법 제231조와 제232조의 규정에 의하여 사문서 위 변조">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="646.0" text="죄로 5년 이하의 징역에 처하게 됩니다.">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="43.0" layoutY="890.0" prefHeight="26.0" prefWidth="640.0" />
+      <Button fx:id="btnPrint" layoutX="340.0" layoutY="816.0" mnemonicParsing="false" text="인쇄하기" />
+      <TextField fx:id="txtName" layoutX="250.0" layoutY="70.0" prefHeight="29.0" prefWidth="105.0" />
+      <TextField fx:id="txtSSM" layoutX="484.0" layoutY="70.0" prefHeight="29.0" prefWidth="186.0" />
+      <TextField fx:id="txtAdd" layoutX="248.0" layoutY="123.0" prefHeight="29.0" prefWidth="419.0" />
+      <TextField fx:id="txtName2" layoutX="250.0" layoutY="184.0" prefHeight="29.0" prefWidth="105.0" />
+      <TextField fx:id="txtAdd2" layoutX="248.0" layoutY="242.0" prefHeight="29.0" prefWidth="419.0" />
+      <TextArea fx:id="txtMandate" layoutX="246.0" layoutY="286.0" prefHeight="74.0" prefWidth="419.0" />
+      <TextArea fx:id="txtReason" layoutX="268.0" layoutY="383.0" prefHeight="62.0" prefWidth="203.0" />
+      <TextField fx:id="txtRealtion" alignment="CENTER" layoutX="555.0" layoutY="386.0" prefHeight="55.0" prefWidth="124.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="dteToday" layoutX="476.0" layoutY="184.0" />
+      <Separator layoutX="46.0" layoutY="500.0" prefHeight="26.0" prefWidth="640.0" />
+      <Separator layoutX="43.0" layoutY="536.0" prefHeight="26.0" prefWidth="640.0" />
+      <TextField fx:id="txtToday" layoutX="141.0" layoutY="514.0" prefHeight="29.0" prefWidth="114.0" />
+      <Label layoutX="54.0" layoutY="515.0" prefHeight="27.0" prefWidth="63.0" text="발행일">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="121.0" layoutY="513.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="25.0" />
+   </children>
+</AnchorPane>
